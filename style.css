@@ -1,0 +1,127 @@
+form {
+    max-width: 450px;
+    margin: 50px auto;
+    font-size: 14px;
+    font-family: Arial;
+    
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    background: #e6e6e4;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-family: Arial;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  div {
+      margin: 15px;
+  }
+  
+  fieldset {
+    border-color: #b8b6b6;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  legend {
+    font-size: 20px;
+    font-family: Arial;
+    color: #858484;
+  }
+
+  input[type="checkbox"]:checked, 
+  input[type="checkbox"]:not(:checked), 
+  input[type="radio"]:checked, 
+  input[type="radio"]:not(:checked) 
+  {
+      position: absolute;
+      left: -9999px;
+  }
+  
+  input[type="checkbox"]:checked + label, 
+  input[type="checkbox"]:not(:checked) + label, 
+  input[type="radio"]:checked + label, 
+  input[type="radio"]:not(:checked) + label {
+      display: inline-block;
+      position: relative;
+      padding-left: 28px;
+      line-height: 20px;
+      cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + label:before, 
+  input[type="checkbox"]:not(:checked) + label:before,
+  input[type="radio"]:checked + label:before, 
+  input[type="radio"]:not(:checked) + label:before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #dddddd;
+      background: #ffffff;
+  }
+  
+  input[type="checkbox"]:checked + label:before, 
+  input[type="checkbox"]:not(:checked) + label:before {
+      border-radius: 2px;
+  }
+  
+  input[type="radio"]:checked + label:before, 
+  input[type="radio"]:not(:checked) + label:before {
+      border-radius: 100%;
+  }
+  
+  input[type="checkbox"]:checked + label:after, 
+  input[type="checkbox"]:not(:checked) + label:after, 
+  input[type="radio"]:checked + label:after, 
+  input[type="radio"]:not(:checked) + label:after {
+      content: "";
+      position: absolute;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  
+  input[type="checkbox"]:checked + label:after, 
+  input[type="checkbox"]:not(:checked) + label:after {
+      left: 3px;
+      top: 4px;
+      width: 10px;
+      height: 5px;
+      border-radius: 1px;
+      border-left: 4px solid #8ef155;
+      border-bottom: 4px solid #8ef155;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  }
+  
+  input[type="radio"]:checked + label:after, 
+  input[type="radio"]:not(:checked) + label:after {
+      left: 5px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: #8ef155;
+  }
+  
+  input[type="checkbox"]:not(:checked) + label:after, 
+  input[type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+  }
+  
+  input[type="checkbox"]:checked + label:after, 
+  input[type="radio"]:checked + label:after {
+      opacity: 1;
+  }
